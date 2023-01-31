@@ -23,6 +23,8 @@ const main = async () => {
   console.log("Deploying, be patient.");
   const contract = await contractFactory.deploy();
   const receipt = await contract.deployTransaction.wait();
+  // console.log(contract);
+  // console.log(receipt);
 
   // interacting with contract
   // retrieve the current fav num
@@ -31,6 +33,8 @@ const main = async () => {
   // store a new fav num
   const storeResp = await contract.store("33");
   const receipt2 = await storeResp.wait("1");
+  // console.log(storeResp);
+  // console.log(receipt2);
   currentFavNum = await contract.retrieve();
   console.log(`The Fav Number now: ${currentFavNum.toString()}`);
 };
