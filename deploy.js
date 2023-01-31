@@ -9,7 +9,7 @@ require("dotenv").config();
 
 // aync function main() {}
 const main = async () => {
-  // endpoint to connect: http://127.0.0.1:8545
+  // endpoint to connect: http://...
   const provider = new ethers.providers.JsonRpcProvider(process.env.rpcPoint);
 
   const wallet = new ethers.Wallet(process.env.privateKey, provider);
