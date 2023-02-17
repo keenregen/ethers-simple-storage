@@ -1,5 +1,5 @@
 # Ethers.js Study 0
 
-## SimpleStorage v0
+## SimpleStorage with Ethers.js v0
 
-### For Local Test
+### For Local Testing
